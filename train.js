@@ -22,6 +22,7 @@ var config = {
     var firstTrainTime = $("#train-time-form").val().trim();
     var frequency = $("#frequency-form").val().trim();
 
+    // all the moment calculations. Should move this below and out of click but ran out of time.
             var currentTime = moment();
             console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
             var firstTimeConverted = moment(firstTrainTime, "HH:mm").subtract(1, "years");
